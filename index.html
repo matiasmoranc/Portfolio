@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Matias Morán</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="build/css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="contenedor">
+        <div class="portfolio">
+            <a href="index.html">
+                <h1>Portfolio</h1>
+            </a>
+       </div>
+            
+        <div class="medio">
+            <div class="contenedor-salir">
+                <button type="button" data-paso="1">Salir</button>
+            </div>
+   
+            <div class="contenido">
+                <div id="paso-1" class="inicio seccion">
+                    <div class="imagen"></div>
+                </div>
+                <div id="paso-2" class="seccion">
+                    <div class="contacto">
+
+                        <div class="contenido-contacto">
+                            <p><span>Hola!</span><br> Si deseas contactarme puedes llenar el siguente formulario o bien puedes hacerlo por mi Linkedin</p>
+                            <a href="https://www.linkedin.com/in/matias-morán-7366a3176" class="icono-li">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24" stroke-width="2.5" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <rect x="4" y="4" width="16" height="16" rx="2" />
+                                    <line x1="8" y1="11" x2="8" y2="16" />
+                                    <line x1="8" y1="8" x2="8" y2="8.01" />
+                                    <line x1="12" y1="16" x2="12" y2="11" />
+                                    <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <form id="form" action="https://formspree.io/f/mrgrldyd" method="POST" class="formulario">
+                            <div class="campo">              
+                                <input name="name" id="name" class="campo__field" type="text" placeholder="Nombre" id="nombre">
+                            </div>
+                            <div class="campo">                 
+                                <input name="mail" id="mail" class="campo__field" type="email" placeholder="Email" id="email">
+                            </div>
+                            <div class="campo">
+                                <textarea name="message" id="message" class="campo__field campo__field--textarea" placeholder="Mensaje" id="mensaje"></textarea>
+                            </div>
+                            
+                            <div class="campo">
+                                <input type="submit" value="Enviar" class="boton boton--primario">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="paso-3" class="portfolio seccion">
+                    <div class="grid">
+                        <div class="contenido-proyecto" id="div1">
+                        
+                                <div class="orden-proyecto">
+                                    <p>Blog de Café</p>
+                                </div>
+                                <img class="imgProyecto" src="build/img/blogcafe.jpg" alt="">                    
+                                <div class="botones-proyecto">
+                                    <a class="repo" href="https://github.com/matiasmoranc/blog-de-cafe">REPO</a>
+                                    <a class="app" href="https://matiasmoranc.github.io/blog-de-cafe/">APP</a>
+                                </div>
+                            </div>
+                        
+                       
+                            <div class="contenido-proyecto" id="div2">
+                                <div class="orden-proyecto">
+                                    <p>APP Salon</p>
+                                </div>
+                                <img class="imgProyecto" src="build/img/appsalon.jpg" alt="">
+                                <div class="botones-proyecto">
+                                    <a class="repo" href="https://github.com/matiasmoranc/AppSalon">REPO</a>
+                                    <a class="app" href="https://matiasmoranc.github.io/AppSalon/">APP</a>
+                                </div>
+                           </div>
+                        
+                            <div class="contenido-proyecto" id="div3">
+                                <div class="orden-proyecto">
+                                    <p>Festival Musical</p>
+                                </div>
+                                <img class="imgProyecto" src="build/img/festivalmusica.jpg" alt="">
+                                <div class="botones-proyecto">
+                                    <a class="repo" href="https://github.com/matiasmoranc/FestivalMusica">REPO</a>
+                                    <a class="app" href="https://matiasmoranc.github.io/FestivalMusica/">APP</a>
+                                </div>
+                            </div>
+                        
+                            <div class="contenido-proyecto" id="div4">
+                                <div class="orden-proyecto">
+                                    <p>Free Lancer</p>
+                                </div>
+                                <img class="imgProyecto" src="build/img/freelancer.jpg" alt="">
+                                <div class="botones-proyecto">
+                                    <a class="repo" href="https://github.com/matiasmoranc/proyecto-de-prueba">REPO</a>
+                                    <a class="app" href="https://matiasmoranc.github.io/proyecto-de-prueba/">APP</a>
+                                </div>
+                            </div>
+                        
+                            <div class="contenido-proyecto" id="div5">
+                                <div class="orden-proyecto">
+                                    <p>Front Store</p>
+                                </div>
+                                <img class="imgProyecto" src="build/img/frontstore.jpg" alt="">
+                                <div class="botones-proyecto">
+                                    <a class="repo" href="https://github.com/matiasmoranc/frontEndStore">REPO</a>
+                                    <a class="app" href="https://matiasmoranc.github.io/frontEndStore/">APP</a>
+                                </div>
+                            </div>
+                        
+                            <div class="contenido-proyecto" id="div6">
+                                <div class="orden-proyecto">
+                                    <p>Lewagon</p>
+                                </div>
+                                <img class="imgProyecto" src="build/img/lewagon.jpg" alt="">                               
+                                    <div class="botones-proyecto">
+                                    <a class="repo" href="https://github.com/matiasmoranc/matiasmoranc">REPO</a>
+                                    <a class="app" href="https://matiasmoranc.github.io/matiasmoranc/">APP</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div> <!-- .contenido -->
+
+            <div class="contenedor-contacto">
+                <button type="button" data-paso="2">Contacto</button>
+            </div>
+        </div> <!-- .medio -->
+            
+        <div class="proyecto">
+            <button type="button" data-paso="3">Proyectos</button>
+        </div>
+    </div> <!-- .contenedor -->
+  
+    <script src="build/js/bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+.no-scroll {
+    overflow:hidden;
+}
+.contenedor {
+    height: 100vh;
+}
+.medio {
+    height: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+.inicio {
+    height: 100%;
+}
+.imagen {
+    background: url('../../build/img/fondoWeb.png');   
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    @include telefono {
+        background: url('../../build/img/fondoWebTelefono.png');   
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+    }
+    @include tablet {
+        background: url('../../build/img/fondoWebTablet.png');   
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+    }
+    @include desktop {
+        background-image: url('../../build/img/fondoWebDesktop.png');   
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.portfolio {
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.contenedor-salir {
+    transform: rotate(90deg);
+    margin-left: -7rem;
+    position: fixed;
+    @include telefono {
+        margin-left: -5rem;
+    }
+    @include tablet {
+        position: relative;
+    }
+
+}
+.contenedor-contacto {
+    transform: rotate(-90deg);
+    margin-right: -12rem;
+    margin-left: -5rem;
+    margin-top: -3rem;
+    position: fixed;
+    right: 0;
+    @include telefono {
+        margin-right: -10rem;
+    }
+    @include tablet {
+        position: relative;
+    }
+}
+
+
+.contenido-proyecto {
+    padding-bottom: 3rem;
+    @include tablet {
+        padding-bottom: 1rem;
+    }
+}
+.imgProyecto {
+    width: 100%;
+}
+.grid {
+    @include tablet {
+        @include grid(2, 2rem);
+    }
+    @include desktop {
+        @include grid(3, 3rem);
+        row-gap: 4rem;
+    }
+    a {
+        cursor: pointer;
+    }
+
+}
+
+.proyecto {
+text-align: center;
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+margin-left: 2rem;
+}
+
+.botones-proyecto {
+    display: flex;
+    justify-content: flex-end;
+    height: 3rem;
+    column-gap: 3px;
+    margin-top: -1rem;
+}
+.orden-proyecto {
+    display: flex;
+    justify-content: space-between;
+}
+
+// ** Botones **
+.repo {
+    color: var(--blanco);
+    background-color: var(--negro);
+    border-radius: 4px;
+    width: 50%;
+    text-align: center;
+    font-weight: 500;
+    transition: background-color .3s ease;
+}
+
+.app {
+    background-color: var(--primario);
+    color: var(--blanco);
+    border-radius: 4px;
+    width: 50%;
+    text-align: center;
+    font-weight: 500;
+    transition: background-color .3s ease;
+}
+
+.app:hover {
+    cursor: pointer;
+    background-color: var(--boton);
+}
+.repo:hover {
+    cursor: pointer;
+    background-color: var(--gris);
+}
+.boton {
+    background-color: var(--primario);
+    border: none;
+    color: var(--blanco);
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 1rem 1rem 0;
+    transition: background-color .3s ease;
+}
+.boton:hover {
+    cursor: pointer;
+    background-color: var(--boton);
+}

@@ -1,0 +1,21 @@
+.contenido {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    @media (max-width: $tablet) {
+        width: 80%;
+        margin-top: 2rem;
+    }
+}
+.seccion {
+    display: none;
+    // margin-top: $separacion / 2;
+}
+.ocultar {
+    display: none;
+}
+
+.mostrar-seccion {
+    display: block!important;
+
+}

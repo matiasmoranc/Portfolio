@@ -1,0 +1,56 @@
+:root {
+    --fuentePrincipal: 'Baloo Tammudu 2', cursive;
+    --primario: #75b7c0;
+    --boton: #3e828b;
+    --blanco: #ffffff;
+    --gris: #383838;
+    --negro: #000000;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+    line-height: 2;
+}
+h1 {
+    font-family: $fuente_principal;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--negro);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    margin: 0 0 0 2rem;
+}
+button {   
+    color: var(--negro);
+    font-family: var(--fuentePrincipal);
+    background-color: var(--blanco);
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2rem;
+    &:hover {
+    font-weight: 400;
+    }
+}
+a {
+    text-decoration: none;
+    cursor: default;
+}
+p {
+    margin: 0;
+    line-height: 2rem;
+}
+svg {
+    cursor: pointer;
+}

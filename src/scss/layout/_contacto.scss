@@ -1,0 +1,73 @@
+.contacto {
+    height: 100%;
+}
+p {
+    span {
+        font-size: 2.5rem;
+    }
+}
+.icono-li {
+    align-items: bottom;
+}
+
+.contenido-contacto {
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    padding: 5rem 0 9rem;
+    margin: 0 auto;
+    @include tablet {
+        width: 50%;
+    }
+}
+.formulario {
+    background-color: var(--blanco);
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    @include telefono {
+        width: 70%;
+    }
+    @include tablet {
+        width: 60%;
+    }
+    @include desktop {
+        width: 50%;
+    }
+}
+.campo {
+    width: 100%;
+}
+.campo__field {
+    border-radius: 5px;
+    margin: 10px 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #777;
+    width: 100%;
+    padding: 7px 8px;
+}
+.campo__field {
+    cursor: pointer;
+    
+}
+input:hover {
+    border-width: 2px;
+    border-color:var(--primario);
+}
+textarea:hover {
+    border-width: 2px;
+    border-color:var(--primario);
+}
+
+
+.campo__field--textarea {
+    border-radius: 5px;
+    margin: 10px 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #777;
+    max-width: 100%;
+    outline: none;
+    padding: 7px 8px;
+}
